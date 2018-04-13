@@ -32,7 +32,7 @@ function wczytaj() { // jak se wdusisz przycisk to sie wywoła
         reader.onload = function (e) {
             var file = this.result.split('\n');
             startRead(file);
-            document.getElementById("Iwona").innerHTML = "Załadowano plik";
+            document.getElementById("Paula").innerHTML = "Załadowano plik";
             //debugger;
         };
         reader.readAsBinaryString(file.files[0]);
