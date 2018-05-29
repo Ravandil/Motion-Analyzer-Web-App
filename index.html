@@ -2,44 +2,36 @@
 <html>
 
 <head>
-  <title>Web Anal</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Motion Analyzer Web App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 
-  <link rel="stylesheet" href="mojwlasnystyl.css">
+    <link rel="stylesheet" href="mojwlasnystyl.css">
 </head>
 
 <body>
 
-  <div class="bgimg w3-display-container w3-animate-opacity">
+    <div class="w3-center">
+        <p class="w3-large w3-center">Podaj plik .bvh przyjacielu</p>
+        <p class="w3-center" id="Paula"></p>
 
-    <div class="w3-display-middle">
-      <h1 class="w3-jumbo w3-animate-top">Witajcie Przyjaciele</h1>
-      <hr class="w3-border-grey" style="margin:auto;width:40%">
-      <p class="w3-large w3-center">Może ukąszenie świni boli lecz to rany po leszczynie goją się dłużej</p>
-      <p class="w3-large w3-center">Podaj plik .bvh przyjacielu</p>
-      <p class="w3-center" id="Paula"></p>
-
-      <form>
-        <input type="file" id="identyfikator" name="pic" accept=".bvh">
-        <button type="button" onclick="wczytaj()">Prześlij</button>
-        <button type="button" onclick="wyswietl()">Przeczytaj Dane</button>
-      </form>
-
-      <p id="krzysztof"></p>
+        <form>
+            <input type="file" id="identyfikator" name="pic" accept=".bvh">
+            <button type="button" onclick="wczytaj()">Wczytaj</button>
+            <button type="button" onclick="wyswietl()">Wyświetl</button>
+        </form>
     </div>
-    <div class="w3-display-bottomleft w3-padding-large">
-      Łukasz Krawczyk, Fryderyk Kłysz, Marcin Machalica
-    </div>
-  </div>
 
-  <script src="czytanie.js"></script>
-  
-  <script src="interfejs.js"></script>
+
+    <p id="krzysztof"></p>
+
+
+    <script src="js/bvh/czytanie.js"></script>
+    <script src="js/bvh/interfejs.js"></script>
 </body>
 
 </html>
