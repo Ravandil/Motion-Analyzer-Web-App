@@ -11,5 +11,5 @@ const plotData = () => {
 };
 
 
-processButton.addEventListener('click', plotData);
+//processButton.addEventListener('click', plotData);
 
